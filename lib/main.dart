@@ -61,14 +61,10 @@
 //     );
 //   }
 // }
-
-
-
-
-
-
-import 'package:first_project/democlass1.dart';
+import 'package:first_project/page1.dart';
+import 'package:first_project/pages/dashboard.dart';
 import 'package:flutter/material.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -81,13 +77,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
 
-          colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-        ),
-        home: democlass1()
+      debugShowCheckedModeBanner: false,
+        title: 'Button And  Navigations',
+        home: const Dashboard(),
     );
   }
 }
